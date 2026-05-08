@@ -1,0 +1,35 @@
+:root {
+    --primary: #0F172A;     /* Dark Navy */
+    --secondary: #1E293B;
+    --accent: #22C55E;      /* Hijau Futsal */
+    --warning: #FACC15;     /* Kuning */
+    --danger: #EF4444;      /* Merah */
+    --bg-light: #F8FAFC;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--primary);
+    margin: 0;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.main-content {
+    margin-left: 260px;
+}
+
+.badge-active { background-color: var(--accent); color: white; padding: 4px 8px; border-radius: 6px; }
+.badge-pending { background-color: var(--warning); color: black; padding: 4px 8px; border-radius: 6px; }
+.badge-full { background-color: var(--danger); color: white; padding: 4px 8px; border-radius: 6px; }
